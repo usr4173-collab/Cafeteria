@@ -51,9 +51,9 @@ public class Pedido {
      @Override
     public String toString() {
         return "Pedido:" +
-                "Codigo: '" + codigo + '\n' +
-                "Cliente: '" + cliente + '\n' +
-                "Producto: '" + producto + '\n' +
+                "Codigo: " + codigo + '\n' +
+                "Cliente: " + cliente + '\n' +
+                "Producto: " + producto + '\n' +
                 "Para llevar: " + paraLlevar;
     }
 
