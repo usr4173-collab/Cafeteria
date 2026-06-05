@@ -47,9 +47,9 @@ public class Participante {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Participante that)) return false;
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Participante that)) return false;
         return Objects.equals(idJugador, that.idJugador);
     }
 
