@@ -28,7 +28,39 @@ public class Pedido {
         return cliente;
     }
 
-    public void setCliente() {
-        
+    public void setCliente(String cliente) {
+        this.cliente = cliente;
+    }
+
+    public String getProducto() {
+        return producto;
+    }
+
+    public void setProducto(String producto) {
+        this.producto = producto;
+    }
+
+    public boolean isParaLlevar() {
+        return paraLlevar;
+    }
+
+    public void setParaLlevar(boolean paraLlevar) {
+        this.paraLlevar = paraLlevar;
+    }
+
+     @Override
+    public String toString() {
+        return "Pedido:" +
+                "Codigo: " + codigo + '\n' +
+                "Cliente: " + cliente + '\n' +
+                "Producto: " + producto + '\n' +
+                "Para llevar: " + paraLlevar;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Pedido pedido)) return false;
+        return Objects.equals(codigo, pedido.codigo);
     }
 }
